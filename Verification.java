@@ -1,5 +1,3 @@
-package application;
-
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -10,7 +8,7 @@ import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;//If needed.
 
 public class Verification {
 	
@@ -60,23 +58,13 @@ public  boolean isValidUsername(String name) {
 	return false;
 	}
 
-	//hanged by kanna
+	//changed by kanna
 
 	
 Matcher m = p.matcher(name);
-
-if(name.length() >=4 && m.matches())
-{ 
-return true;
-
-}
-
+if(name.length() >=4 && m.matches()){return true;}
 //Return if the username 
 //matched the ReGex 
-
-
-
-
 return m.matches();
 
 }
@@ -114,7 +102,6 @@ int count;
 //Converts given string into character array  
 char[] string1 = str.toCharArray();  
   
-//onsole.WriteLine("Duplicate characters in a given string: ");  
 //Counts each character present in the string  
 for(int i = 0; i <string1.length; i++) {  
     count = 1;  
@@ -168,10 +155,9 @@ for(int i = 0; i <string1.length; i++) {
 	 
 	 
 	  
-	 if(a >31 || b > 12 || c >2021 ) {
+	 if(a >31 || b > 12 || c >2021 ) {//Change the a,b,c values accourding to your needs.
 		 System.out.println("*********************************************");
-		 System.out.println("System dictated some error's : ");
-		 System.out.println("you entered*********** wrong  day or month or year**********");
+		 System.out.println("Entered*********** wrong  day or month or year**********");
 		 System.out.println("Please try again...");
 		 System.out.println("*********************************************");
 		return false;
@@ -222,7 +208,6 @@ int count;
 //Converts given string into character array  
 char[] string1 = str.toCharArray();  
   
-//onsole.WriteLine("Duplicate characters in a given string: ");  
 //Counts each character present in the string  
 for(int i = 0; i <string1.length; i++) {  
     count = 1;  
@@ -236,10 +221,7 @@ for(int i = 0; i <string1.length; i++) {
     //A character is considered as duplicate if count is greater than 1  
     // checking repeating char
     if(count > 4 && string1[i] != '0') { 
-        //Console.WriteLine(string1[i]);  
-    	//num = 5;
-    	//System.out.println("[][][][][]");
-		//JOptionPane.showMessageDialog(null, "System Dictated Some Repeated Characters In Your Name", "error", JOptionPane.ERROR_MESSAGE);
+	//JOptionPane.showMessageDialog(null, "System Dictated Some Repeated Characters In Your Name", "error", JOptionPane.ERROR_MESSAGE);
     	return false;
 
     		}
@@ -252,3 +234,9 @@ for(int i = 0; i <string1.length; i++) {
 }
 
 }
+
+
+/*
+All the above methods can work independently without others
+Thanks for viewing and for the forking it.
+*/
